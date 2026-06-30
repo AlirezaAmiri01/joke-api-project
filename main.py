@@ -45,9 +45,11 @@ def menu():
 def main():
     while True:
         menu()
-
-        choice = int(input("Enter your choice(number): "))
-
+        try:
+            choice = int(input("Enter your choice(number): "))
+        except ValueError:
+            print("Enter a number from 0 to 4")
+            continue
         if choice == 1:
             print(get_random_joke())
 
@@ -65,7 +67,7 @@ def main():
             break
 
         else:
-            print("pleas enter a number from 0 to 4")
+            print("please enter a number from 0 to 4")
 
 
 if __name__ == "__main__":
