@@ -7,16 +7,17 @@ from providers import (
 )
 
 
-def main():
-    provider_list = [
-        JokeAPIProvider(),
-        OfficialJokeProvider(),
-        DadJokeProvider
+def menu():
+    print("===== JOKE GENRATOR =====")
+    print("1.Random Joke")
+    print("2.JokeAPI")
+    print("3.Official Joke")
+    print("4.Dad Joke")
+    print("5.Exit")
 
-    ]
-    provider = random.choice(provider_list)
-    random_joke = provider.get_random_joke()
-    print(random_joke)
+
+def main():
+    pass
 
 
 if __name__ == "__main__":
