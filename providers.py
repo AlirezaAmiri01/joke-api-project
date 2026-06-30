@@ -1,3 +1,4 @@
+from joke import Joke
 import requests
 
 
