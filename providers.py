@@ -4,7 +4,7 @@ class JokeAPIProvider(Joke):
         pass
 
 
-class officialJokeProvider(Joke):
+class OfficialJokeProvider(Joke):
 
     def get_random_joke(self):
         pass
